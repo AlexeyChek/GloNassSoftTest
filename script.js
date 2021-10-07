@@ -92,10 +92,21 @@ const drawDiagram = (data, diagram) => {
   maxX = Math.ceil(maxX);
   minY = Math.floor(minY);
   maxY = Math.ceil(maxY);
+
+  if (minX === maxX) {
+    minX = minX - 1;
+    maxX = maxX + 1;
+  }
   
+  if (minY === maxY) {
+    minY = minY - 1;
+    maxY = maxY + 1;
+  }  
 
   stepX = 220 / (maxX - minX);
+  console.log('stepX: ', stepX);
   stepY = 220 / (maxY - minY);
+  console.log('stepY: ', stepY);
 
   ctx.lineWidth = 2;
   ctx.strokeStyle = '#000';

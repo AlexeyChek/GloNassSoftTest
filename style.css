@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: max-content;
+  margin: 10px auto;
+}
+
+table:not(:last-child) {
+  margin-right: 20px;
+}
+
+td {
+  width: 100px;
+  text-align: center;
+}
+
+input,
+button {
+  width: 100%;
+  text-align: center;
+}
+
+canvas {
+  min-width: 30%;
+  max-width: 300px;
+  height: 300px;
+  border: 1px solid #000;
+}
+
+.diagram:not(:last-child) {
+  margin-right: 20px;
+}

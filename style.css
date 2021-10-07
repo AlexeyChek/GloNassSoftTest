@@ -9,7 +9,7 @@ section {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  width: max-content;
+  max-width: max-content;
   margin: 10px auto;
 }
 
